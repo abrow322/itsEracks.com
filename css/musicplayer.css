@@ -1,0 +1,253 @@
+/* Font Family
+================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+
+
+.container-music-player {
+    width: 100%;
+    padding-right:0;
+    padding-left:0;
+    object-fit: cover;
+    padding-top: 50px;
+    display: block;
+}
+.column-music-player {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+.music-title {
+    margin-top: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container-music-player h2 {
+    text-align: center;
+}
+.album-images {
+    text-align: center;
+    display: block;
+
+}
+.album-images img {
+    height: 300px;
+}
+
+/* Typography / Links
+================================================== */
+
+.container-music-player p { color:#fff; display:block; font-size:.9rem; font-weight:400; margin:0 0 2px; }
+
+.container-music-player a, .container-music-player a:visited { color:#8cc3e6; outline:0; text-decoration:underline; }
+.container-music-player a:hover, .container-music-player a:focus { color:#bbdef5; }
+.container-music-player p .container-music-player a,  .container-music-player p .container-music-player a:visited { line-height:inherit; }
+
+
+/* Misc.
+================================================== */
+
+.add-bottom-music-player { margin-bottom:2rem !important; }
+.left { float:left; }
+.right { float:right; }
+.center { text-align:center; }
+.hidden { display:none; }
+
+.no-support {
+    margin:2rem auto;
+    text-align:center;
+    width:90%;
+}
+
+
+/* Audio Player Styles
+================================================== */
+
+audio {
+    display:none;
+}
+
+.audio-controller {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 75%;
+}
+
+.audio-info {
+    padding-left: 35px;
+}
+
+#audiowrap {
+    margin:0 auto;
+
+}
+
+#tracks {
+    font-size:0;
+    position:relative;
+    text-align:center;
+    
+}
+
+#nowPlay {
+    display:block;
+    font-size:0;
+}
+
+#nowPlay span {
+    display: block;
+    font-size:1.05rem;
+    vertical-align:top;
+}
+
+#nowPlay span#npAction {
+    text-align: center;
+    padding:0px;
+    width:30%;
+}
+
+.container-music-player span#npTitle {
+    padding:21px;
+    margin-right:auto;
+    margin-left:auto;
+    width:70%;
+}
+#plwrap {
+    padding-right: 40px;
+}
+#plList li {
+    cursor:pointer;
+    display:block;
+    margin:0;
+    padding:21px 0;
+}
+
+#plList li:hover {
+    background-color:rgba(0,0,0,.1);
+}
+
+.plItem {
+    position:relative;
+
+}
+
+.plTitle {
+    left:50px;
+    overflow:hidden;
+    position:absolute;
+    right:100px;
+    text-overflow:ellipsis;
+    top:0;
+    white-space:nowrap;
+}
+
+.plNum {
+    padding-left:21px;
+    width:25px;
+}
+
+.plLength {
+    padding-left:21px;
+    position:absolute;
+    right:21px;
+    top:0;
+}
+.plLength a.fa-apple{
+    color: #000000;
+    text-decoration: none;
+    padding-left: 10px;
+
+}
+.plLength a.fa-apple:hover {
+    color: #8cc3e6;
+}
+.plLength a.fa-envelope-open-text{
+    color: #000000;
+    text-decoration: none;
+    padding-left: 10px;
+
+}
+.plLength a.fa-envelope-open-text:hover {
+    color: #8cc3e6;
+}
+
+.plSel,
+.plSel:hover {
+    background-color:rgba(0,0,0,.1);
+    color:#000000;
+    cursor:default !important;
+}
+
+#tracks a {
+    border-radius:3px;
+    color:rgba(0,0,0,.5);
+    cursor:pointer;
+    display:inline-block;
+    font-size:2.3rem;
+    height:35px;
+    line-height:.175;
+    margin:0 5px 30px;
+    padding:10px 15px;
+    text-decoration:none;
+    transition:background .3s ease;
+}
+
+#tracks a:last-child {
+    margin-left:0;
+}
+
+#tracks a:hover,
+#tracks a:active {
+    background-color:rgba(0,0,0,.1);
+    color:#fff;
+}
+
+#tracks a::-moz-focus-inner {
+    border:0;
+    padding:0;
+}
+
+
+/* Plyr Overrides
+================================================== */
+
+.plyr--audio .plyr__controls {
+    background-color:transparent;
+    border:none;
+    color:#fff;
+    padding:20px 20px 20px 13px;
+    width:100%;
+}
+
+.container-music-player a.plyr__controls__item.plyr__control:hover,
+.plyr--audio .plyr__controls button:hover,
+.plyr--audio .plyr__controls button.tab-focus:focus,
+.plyr__play-large {
+    background-color:rgba(0,0,0,.1);
+}
+
+.plyr__progress--played,
+.plyr__volume--display {
+    color:rgba(0,0,0,.1);
+}
+
+.plyr--audio .plyr__progress--buffer,
+.plyr--audio .plyr__volume--display {
+    background:rgba(0,0,0,.1);
+}
+
+.plyr--audio .plyr__progress--buffer {
+    color:rgba(0,0,0,.1);
+}
+
+
+/* Media Queries
+================================================== */
+
+@media only screen and (max-width:600px) {
+    #nowPlay span#npAction { display:none; }
+    #nowPlay span#npTitle { display:block; text-align:center; width:100%; }
+}

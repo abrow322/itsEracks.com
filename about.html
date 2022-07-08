@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Tooplate 2111 Pro Line http://www.tooplate.com/view/2111-pro-line-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>itsEracks.com</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/tooplate-style.css"/>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/zoom.css"/>
+</head>
+
+<body onload="highlightPage()">
+<!-- Header -->
+<div class="container" id="home">
+    <div class="col-12 text-center">
+        <div class="page-header">
+            <i class="fas fa-5x fa-headphones feature-icon"></i>
+            <h1 class="d-inline-block">itsEracks</h1>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<div class="nav-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#MainNav"
+                            aria-controls="MainNav"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="MainNav">
+                        <ul class="navbar-nav mx-auto navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" id="index" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="previews" href="previews.html">Previews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="about" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slideshow container -->
+<div class="slideshow">
+    <ul id="slider">
+        <li><img src="img/IMG_1220.jpg" alt="" title="Eracks' Setup"></li>
+        <li><img src="img/IMG_0740.JPG" alt="" title="KJ Kaliente Recording Verse"></li>
+        <li><img src="img/IMG_0739.JPG" alt="" title="KJ Kaliente in the Studio"></li>
+        <li><img src="img/IMG_0743.JPG" alt="" title="KJ Kaliente in the Studio"></li>
+    </ul>
+</div>
+
+<!-- About Section -->
+<section class="container company-section" id="company">
+    <div class="row">
+        <div class="col-xl-9 col-lg-8 col-md-12 company-left">
+            <div class="company-about">
+                <div class="company-img-container">
+                    <img src="img/erik_pic.jpeg" data-action="zoom" onmouseover="showImageName('Photo of Erik Holden')" onmouseout="hideImageName()" alt="Image"/>
+                    <p class="company-image-text" id="company-image-text"></p>
+                </div>
+                <div class="company-about-text">
+                    <header>
+                        <h2 class="company-about-header">About Me</h2>
+                    </header>
+                    <p>
+                        <b>Erik Holden</b> is a musical producer located in Charlotte, NC.
+                        He currently is producing music for local artists, but wants to broaden his music
+                        for artists around the world.
+                    </p>
+                    <p class="mb-4">
+                        Erik has been producing beats for over two years and has created dozens of beats
+                        for all types of genres including hip-hop, trap, R&B, and pop music.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-9 col-lg-4 col-md-12 company-right  ml-lg-auto mr-lg-0">
+            <div class="company-right-inner">
+                <ul class="nav nav-tabs" id="CompanyTab" role="tablist">
+                    <li class="nav-item">
+                        <a
+                                class="nav-link nav-link-border-right active"
+                                id="vision-tab"
+                                data-toggle="tab"
+                                href="#vision"
+                                role="tab"
+                                aria-controls="vision"
+                                aria-selected="true"
+                        >Current Status</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                                class="nav-link no-border-right"
+                                id="mission-tab"
+                                data-toggle="tab"
+                                href="#mission"
+                                role="tab"
+                                aria-controls="mission"
+                                aria-selected="false"
+                        >Future Goals</a
+                        >
+                    </li>
+                </ul>
+                <div class="tab-content" id="TabContent">
+                    <div
+                            class="tab-pane fade show active"
+                            id="vision"
+                            role="tabpanel"
+                            aria-labelledby="vision-tab"
+                    >
+                        <p>
+                            Currently, Erik has two songs readily available on Apple Music for downloading.
+                            He also has three unreleased songs coming out in the near future.
+                            All released music can be found on the home page. <br> Works privately to sell or lease beats.
+                        </p>
+                    </div>
+                    <div
+                            class="tab-pane fade"
+                            id="mission"
+                            role="tabpanel"
+                            aria-labelledby="mission-tab"
+                    >
+                        <p>
+                            Erik plans to join an independent record label in the coming months.
+                            He will be joining a group of local artists to create more music with high end producing software.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="container footer">
+    <div class="row footer-row">
+        <p class="col-md-10 col-sm-12 mb-0">
+            <a href="https://www.instagram.com/its.eracks/?hl=en" class="fab fa-instagram"></a>
+            <br>Copyright &copy; 2020: itsEracks.com
+        </p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/slideshow.js"></script>
+<script src="js/zoom.js"></script>
+<script src="js/tooplate-scripts.js"></script>
+</body>
+</html>
